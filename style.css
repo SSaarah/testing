@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://cdn.pixabay.com/photo/2016/08/12/20/14/yellowstone-1589613_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin: 20px;
+}
+
+li{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: lightgrey;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.4s ease;
+}
+
+a:hover{
+    background-color: lightgrey;
+    color: black;
+}
+
+li.active a{ 
+    background-color: lightgrey;
+    color: black;
+}
+
+div.home{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.home h1{
+    color: whitesmoke;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.contact{
+    max-width: 600px;
+    height: 450px;
+    background-color: transparent;
+    margin: 50px auto;
+    margin-top: 150px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px whitesmoke;
+    padding: 30px;
+}
+
+div.contact p{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    color: whitesmoke;
+    letter-spacing: 0.5px;
+}
+
+.input, .message .text{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.info .input{
+    width: 48.5%;
+    float: left;
+    margin-left: 0;
+    margin-right: 3%;
+}
+
+.info .input:last-child{
+    margin-right: 0%;
+}
+
+.message .text{
+    height: 150px;
+    resize: none;
+}
+
+div.button{
+    width: 125px;
+    height: 25px;
+    font-size: 16px;
+    padding: 2.5px 24px;
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid black;
+    text-align: center;
+    transition-duration: 0.4s;
+    float: center;
+    margin: 0 auto;
+    cursor: pointer;
+    line-height: 20px;
+    border-radius: 4px;
+}
+
+div.button:hover{
+    background-color: black;
+    color: whitesmoke;
+}
